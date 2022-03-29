@@ -1,0 +1,40 @@
+html, body {
+    margin: 0px;
+    padding: 0px;
+    height: 100%
+}
+body {
+    background-color: #414141;
+}
+.mainPage {
+    display: flex;
+    border: 1px solid red;
+    height: 100%;
+    flex-direction: column;
+}
+.topText {
+    display: flex;
+    flex: 1;
+    border: 1px solid white;
+}
+.selectImages {
+    display: flex;
+    flex: 2;
+    border: 1px solid red;
+    flex-direction: row;
+}
+.scoreKeep {
+    display: flex;
+    flex: 1;
+    border: 1px solid green;
+}
+.selectImages {
+    flex: 1;
+    justify-content: space-evenly;
+    
+
+}
+.selectImages img {
+    border-radius: 40%;
+    height: 40%;
+}
