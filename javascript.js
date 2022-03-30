@@ -1,8 +1,8 @@
 //text for editing
 document.getElementById("userPick").innerHTML = "Rock Paper Scissors! ";
 document.getElementById("computerPick").innerHTML = "Computer will pick next! ";
-document.getElementById("playerWins").innerHTML = "Player total wins: ";
-document.getElementById("pcWins").innerHTML = "Computer total wins: ";
+document.getElementById("endMessage").innerHTML = "Good luck! ";
+
 
 var rockBtn = document.getElementById("rockBtn");
 	rockBtn.addEventListener("click", function() {
@@ -52,23 +52,24 @@ function computerChoice() {
 function theGame(choice1, choice2) {
 		if(choice1 === choice2) {
 			document.getElementById("winnerText").innerHTML = "It's a draw! ";
+			document.getElementById("endMessage").innerHTML = "Could be worse! ";
 		}
 		else if(choice1 == 0 && choice2 == 2) {
 			document.getElementById("winnerText").innerHTML = "Player wins! ";
+			document.getElementById("endMessage").innerHTML = "Congratulations! ";
 		}
 		else if(choice1 == 1 && choice2 == 0) {
 			document.getElementById("winnerText").innerHTML = "Player wins! ";
+			document.getElementById("endMessage").innerHTML = "Congratulations! ";
 		}
 		else if(choice1 == 2 && choice2 == 1) {
 			document.getElementById("winnerText").innerHTML = "Player wins! ";
+			document.getElementById("endMessage").innerHTML = "Congratulations! ";
 		}
 		else {
 			document.getElementById("winnerText").innerHTML = "Player loses! ";	
+			document.getElementById("endMessage").innerHTML = "Try again! ";
 		}
 	}
 
-
-
-
-
-
+	
