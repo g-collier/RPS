@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title></title>
+        <title>Rock Paper Scissors!</title>
         <link rel="stylesheet" href="stylesheet.css">
     </head>
     <body>
         <div class="mainPage">
             <div class="topText">
-    
+                <h1 id="userPick"></h1>
+                <h1 id="computerPick"></h1>
+                <h1 id="winnerText"></h1>
             </div>
-            <div class="selectImages">
+            <div class="centerBox">
                 <div class="rock">
                     <img src="rock.png">
-                    <button>Choose Rock!</button>
+                    <button id = "rockBtn">Choose Rock!</button>
                 </div>
-                
-                <div class="paper"></div>
+                        
+                <div class="paper">
                     <img src="paper.png">
-                    <button>Choose Paper!</button>
+                    <button id = "paperBtn">Choose Paper!</button>
                 </div>
-               
-                <div class="scissors"></div>"
+                    
+                <div class="scissors">
                     <img src="scissor.png">
-                    <button>Choose Scissors!</button>
-                </div>"
+                    <button id = scissorBtn>Choose Scissors!</button>
+                </div>
             </div>
             <div class="scoreKeep">
-
+                <h1 id = "playerWins"></h1>
+                <h1 id = "pcWins"></h1>
             </div>
 
         </div>
